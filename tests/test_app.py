@@ -11,8 +11,8 @@ def client():
     """
     Fixture to set up the test client for Flask app.
     """
-    with app.test_client() as flask_client:
-        yield flask_client
+    with app.test_client() as client:
+        yield client
 
 
 def test_hello_world(client):
