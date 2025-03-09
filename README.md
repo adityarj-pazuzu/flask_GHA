@@ -32,9 +32,10 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 4. Install pre-commit hooks
+### 4. Install pre-commit hooks and run
 ```bash
 pre-commit install
+pre-commit run --show-diff-on-failure --color=always --all-files
 ```
 
 ### 5. Check pylint
